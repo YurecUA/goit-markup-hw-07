@@ -1,0 +1,54 @@
+.hero {
+  max-width: 1600px;
+  padding: 200px 0;
+  margin: auto;
+
+  text-align: center;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/Meeting_bgn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $background-color;
+
+  &__title {
+    margin: 0 auto 30px;
+    width: 696px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $accessory-color;
+  }
+
+  &__button {
+    padding: 10px 32px;
+
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: $accessory-color;
+    background-color: $hover-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    border: transparent;
+    transition: background-color $cubic 250ms;
+
+    &:focus,
+    &:hover {
+      background-color: $buttons-hover-color;
+    }
+  }
+}

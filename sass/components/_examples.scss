@@ -1,0 +1,50 @@
+.examples {
+  padding-bottom: 94px;
+
+  &__title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: $accessory-color;
+    background-color: $image-overlay-color;
+    z-index: 10;
+
+    background-color: $image-overlay-color;
+  }
+
+  &__text {
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $accessory-color;
+  }
+}

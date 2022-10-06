@@ -1,0 +1,194 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $background-color;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    color: $accessory-color;
+  }
+
+  &__logo--blue {
+    color: $hover-color;
+  }
+  &__address--container {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    width: 231px;
+    height: 118px;
+    margin: 0;
+    padding-left: 15px;
+  }
+}
+
+.address {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    color: $adress-color;
+    transition: color $cubic 250ms;
+
+    &:focus,
+    &:hover {
+      color: $hover-color;
+    }
+  }
+
+  &__link--white {
+    color: $accessory-color;
+  }
+}
+
+.footer-socials {
+  margin-left: 70px;
+  margin-right: 93px;
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $accessory-color;
+  }
+
+  &__list {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__item {
+    width: 44px;
+    height: 44px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+    background-color: $footer-social-color;
+    color: $accessory-color;
+    transition: background-color $cubic 250ms;
+
+    &:focus,
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+    fill: currentColor;
+  }
+}
+
+.footer-subscribe {
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $accessory-color;
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    margin-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    outline: none;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: $form-input-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: $form-input-color;
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+    width: 200px;
+    padding: 10px 28px;
+
+    background: $hover-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+    cursor: pointer;
+    transition: background-color $cubic 250ms;
+
+    &:focus,
+    &:hover {
+      background-color: $buttons-hover-color;
+      transition: background-color $cubic 250ms;
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: $accessory-color;
+  }
+
+  &__icon {
+    margin-left: 10px;
+  }
+}
